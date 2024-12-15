@@ -1,0 +1,104 @@
+/* src/components/Product/Product.css */
+
+.product-container {
+  padding: 20px;
+  text-align: center;
+  max-width: 1200px; /* Set a maximum width */
+  margin: 0 auto; /* Center the container */
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Ensures 4 items per row */
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+.product-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-details {
+  text-align: left;
+  padding: 0 10px;
+}
+
+.product-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-description {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.add-to-cart-button {
+  background-color: #08a850;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* src/components/Product/Product.css */
+
+.product-tags {
+  margin-top: 8px;
+}
+
+.tag-button {
+  background-color: #e0e0e0; /* Soft grey background */
+  color: #333; /* Dark grey text */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-right: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tag-button:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #007bff; /* Blue text on hover */
+}
